@@ -1,0 +1,46 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+main {
+  padding: 20px;
+}
+
+/* Image styles */
+.large-image img {
+  width: 100%; /* Take up full width */
+}
+
+.medium-image img {
+  width: 75%; /* Take up half width */
+}
+
+.small-image img {
+  width: 50px; /* Fixed width */
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 1000px) {
+  .medium-image img {
+    width: 100%; /* Adjust width for medium screens */
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .medium-image img {
+    width: 75%; /* Full width for small screens */
+  }
+
+  .small-image img {
+    width: 50%; /* Take up half width */
+  }
+}
